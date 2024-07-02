@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Scientist in Pharmaceutical Industry</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            position: relative;
+            background: url('https://via.placeholder.com/1200x300') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header .profile-picture {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            border: 5px solid white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            background: url('https://via.placeholder.com/150') no-repeat center center;
+            background-size: cover;
+        }
+        header h1 {
+            margin-top: 100px;
+        }
+        nav a {
+            color: #333;
+        }
+        section {
+            padding: 60px 0;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-picture"></div>
+        <h1>Your Name</h1>
+        <h2>Scientist in Pharmaceutical Industry</h2>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="#patents">Patents</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a scientist with a PhD in Chemistry, currently working in the corporate sector within the pharmaceutical industry. My work focuses on developing innovative solutions to improve patient outcomes.</p>
+        <img src="https://via.placeholder.com/800x400" class="img-fluid" alt="About me image">
+    </section>
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <p>Here are some of my notable projects:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Description of Project 3.</p>
+            </div>
+        </div>
+    </section>
+    <section id="research" class="container">
+        <h2>Research</h2>
+        <p>Details about my research work:</p>
+        <img src="https://via.placeholder.com/800x400" class="img-fluid" alt="Research image">
+    </section>
+    <section id="patents" class="container">
+        <h2>Patents</h2>
+        <ul>
+            <li>Patent 1: Brief description</li>
+            <li>Patent 2: Brief description</li>
+        </ul>
+    </section>
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>Skill 1: Description</li>
+            <li>Skill 2: Description</li>
+        </ul>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via social media:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank"><img src="https://via.placeholder.com/30" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="https://via.placeholder.com/30" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('nav a').on('click', function(event) {
+                event.preventDefault();
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top - 70
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
